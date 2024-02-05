@@ -50,7 +50,10 @@ def new_data_structs():
     manera vacía para posteriormente almacenar la información.
     """
     #TODO: Inicializar las estructuras de datos
-    pass
+    suramerica = {"Suramerica": lt.newList() }
+    
+    return suramerica
+
 
 
 # Funciones para agregar informacion al modelo
@@ -59,10 +62,16 @@ def add_data(data_structs, data):
     """
     Función para agregar nuevos elementos a la lista
     """
+    
+    
     #TODO: Crear la función para agregar elementos a una lista
-    pass
+    
+    for i in data:
+        lt.addFirst(data_structs["Suramerica"],i )
+    return data_structs
 
-
+suramerica = ["Colombia","Venezuela","Surinam","Argentina","Guyana","Chile","Brasil","Bolivia","Paraguay","Uruguay","Perú","Guayana Francesa","Ecuador"]
+print(new_data_structs(),suramerica)
 # Funciones para creacion de datos
 
 def new_data(id, info):
